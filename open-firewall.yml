@@ -1,0 +1,14 @@
+---
+- hosts: test 
+  become: yes
+  become_method: sudo
+  tasks:
+    
+    - firewalld:
+        port: 8082/tcp
+        permanent: yes
+        state: enabled
+        zone: public
+
+    - name: reload firewalld
+      command: firewall-cmd --reload
