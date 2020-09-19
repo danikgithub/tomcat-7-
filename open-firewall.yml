@@ -5,7 +5,7 @@
   tasks:
     
     - firewalld:
-        port: 8082/tcp,8080/tcp
+        port: 8080/tcp
         permanent: yes
         state: enabled
         zone: public
