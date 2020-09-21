@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+  remote_user: daniel
   become_method: sudo
   tasks:
     
