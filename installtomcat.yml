@@ -1,7 +1,6 @@
 ---
 - hosts: all 
   remote_user: daniel
-  become_method: sudo
   become: yes
   roles:
      - tomcat
