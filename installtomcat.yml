@@ -1,6 +1,5 @@
 ---
 - hosts: all 
   remote_user: daniel
-  become: yes
   roles:
      - tomcat
